@@ -1,219 +1,48 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Beautiful Landing Page</title>
-  <script src="https://dev-d.sc-shutto-translation.com/trans.js?id=563"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-      font-family: 'Poppins', sans-serif;
-    }
-
-    body {
-      background: #0f172a;
-      color: white;
-      overflow-x: hidden;
-    }
-
-    /* HERO */
-    .hero {
-      height: 100vh;
-      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)),
-        url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') center/cover no-repeat;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      position: relative;
-    }
-
-    .hero h1 {
-      font-size: 60px;
-      opacity: 0;
-      transform: translateY(40px);
-      animation: fadeUp 1.5s forwards;
-    }
-
-    .hero p {
-      margin-top: 20px;
-      font-size: 18px;
-      opacity: 0;
-      animation: fadeUp 1.5s 0.5s forwards;
-    }
-
-    .btn {
-      margin-top: 30px;
-      padding: 14px 40px;
-      background: #3b82f6;
-      border: none;
-      border-radius: 30px;
-      font-size: 16px;
-      cursor: pointer;
-      position: relative;
-      overflow: hidden;
-      transition: 0.3s;
-    }
-
-    .btn:hover {
-      background: #2563eb;
-      transform: scale(1.05);
-    }
-
-    /* CARDS */
-    .section {
-      padding: 100px 10%;
-      text-align: center;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-      margin-top: 50px;
-    }
-
-    .card {
-      background: #1e293b;
-      padding: 40px;
-      border-radius: 20px;
-      transition: 0.4s;
-      opacity: 0;
-      transform: translateY(50px);
-    }
-
-    .card:hover {
-      transform: translateY(-10px) scale(1.03);
-      background: #334155;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.5);
-    }
-
-    .card img {
-      width: 80px;
-      margin-bottom: 20px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 40px;
-      background: #0f172a;
-      opacity: 0.6;
-    }
-
-    /* ANIMATIONS */
-    @keyframes fadeUp {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    .show {
-      opacity: 1 !important;
-      transform: translateY(0) !important;
-      transition: 1s ease;
-    }
-
-    /* Ripple */
-    .ripple {
-      position: absolute;
-      border-radius: 50%;
-      transform: scale(0);
-      animation: ripple 600ms linear;
-      background-color: rgba(255, 255, 255, 0.7);
-    }
-
-    @keyframes ripple {
-      to {
-        transform: scale(4);
-        opacity: 0;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Trang Nhiều Đoạn Văn</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.8;
+            padding: 40px;
+            background-color: #f4f6f9;
+            color: #333;
+        }
+        h1 {
+            margin-bottom: 30px;
+        }
+        p {
+            margin-bottom: 16px;
+        }
+    </style>
 </head>
 <body>
+    <h1>Trang Hiển Thị Nhiều Đoạn Văn Bản</h1>
 
-  <section class="hero">
-    <h1>Welcome To My World</h1>
-    <p>Page này được sửa vào ngày 2026/03/04</p>
+    <p>Đây là đoạn văn bản số 1. Nội dung này chỉ nhằm mục đích hiển thị nhiều text trên trang web.</p>
+    <p>Đây là đoạn văn bản số 2. Bạn có thể cuộn xuống để xem thêm nội dung phía dưới.</p>
+    <p>Đây là đoạn văn bản số 3. Mỗi đoạn văn được đặt trong một thẻ p riêng biệt.</p>
+    <p>Đây là đoạn văn bản số 4. Trang này không có chức năng đặc biệt nào khác.</p>
+    <p>Đây là đoạn văn bản số 5. Nội dung chỉ mang tính chất minh họa.</p>
+    <p>Đây là đoạn văn bản số 6. Bạn có thể nhân bản thêm các thẻ p nếu cần nhiều hơn.</p>
+    <p>Đây là đoạn văn bản số 7. Văn bản tiếp tục được lặp lại để tạo chiều dài trang.</p>
+    <p>Đây là đoạn văn bản số 8. Điều này giúp bạn test scroll hoặc layout.</p>
+    <p>Đây là đoạn văn bản số 9. Mỗi đoạn đều độc lập với nhau.</p>
+    <p>Đây là đoạn văn bản số 10. Bạn có thể chỉnh sửa nội dung tùy ý.</p>
 
-    <button class="btn">Get Started</button>
-  </section>
-
-  <section class="section">
-    <h2>Our Features</h2>
-    <div class="cards">
-      <div class="card">
-        <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png">
-        <h3>Fast</h3>
-        <p>Super fast performance with smooth animations.</p>
-        <p>Xin chào tôi đã chỉnh sửa page lần nữa</p>
-      </div>
-      <div class="card">
-        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png">
-        <h3>Modern</h3>
-        <p>Clean design with modern UI trends.</p>
-      </div>
-      <div class="card">
-        <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png">
-        <h3>Secure</h3>
-        <p>Built with best practices and secure standards.</p>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    © 2026 Beautiful Landing Page
-  </footer>
-
-  <script>
-    // Scroll reveal
-    const cards = document.querySelectorAll('.card');
-
-    window.addEventListener('scroll', () => {
-      const trigger = window.innerHeight * 0.85;
-      cards.forEach(card => {
-        const top = card.getBoundingClientRect().top;
-        if (top < trigger) {
-          card.classList.add('show');
-        }
-      });
-    });
-
-    // Ripple effect
-    const button = document.querySelector('.btn');
-
-    button.addEventListener('click', function (e) {
-      const circle = document.createElement("span");
-      const diameter = Math.max(this.clientWidth, this.clientHeight);
-      const radius = diameter / 2;
-
-      circle.style.width = circle.style.height = `${diameter}px`;
-      circle.style.left = `${e.clientX - this.offsetLeft - radius}px`;
-      circle.style.top = `${e.clientY - this.offsetTop - radius}px`;
-      circle.classList.add("ripple");
-
-      const ripple = this.getElementsByClassName("ripple")[0];
-      if (ripple) {
-        ripple.remove();
-      }
-
-      this.appendChild(circle);
-    });
-
-    // Parallax effect
-    window.addEventListener('scroll', function() {
-      const hero = document.querySelector('.hero');
-      hero.style.backgroundPositionY = window.pageYOffset * 0.5 + "px";
-    });
-  </script>
+    <p>Đây là đoạn văn bản số 11. Nội dung lặp lại nhằm mục đích tăng độ dài trang.</p>
+    <p>Đây là đoạn văn bản số 12. Khi trang có nhiều text, bạn có thể test performance.</p>
+    <p>Đây là đoạn văn bản số 13. Hoặc test tính năng lazy loading nếu cần.</p>
+    <p>Đây là đoạn văn bản số 14. Mỗi đoạn đều có khoảng cách bên dưới.</p>
+    <p>Đây là đoạn văn bản số 15. Nội dung tiếp tục kéo dài xuống dưới.</p>
+    <p>Đây là đoạn văn bản số 16. Trang này chỉ gồm tiêu đề và nhiều đoạn văn.</p>
+    <p>Đây là đoạn văn bản số 17. Không có hình ảnh hay JavaScript.</p>
+    <p>Đây là đoạn văn bản số 18. Chỉ tập trung vào hiển thị text.</p>
+    <p>Đây là đoạn văn bản số 19. Bạn có thể thêm hàng trăm đoạn nếu muốn.</p>
+    <p>Đây là đoạn văn bản số 20. Kết thúc ví dụ minh họa.</p>
 
 </body>
 </html>
